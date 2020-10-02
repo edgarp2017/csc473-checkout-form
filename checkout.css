@@ -1,0 +1,11 @@
+body {
+  background-color: #a6a6ad;
+}
+
+.badge-spacing {
+  margin-left: 6rem;
+}
+
+.cart {
+  position: absolute;
+}
