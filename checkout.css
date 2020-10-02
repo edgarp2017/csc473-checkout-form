@@ -6,12 +6,8 @@ body {
   margin-left: 6rem;
 }
 
-input:invalid {
-  border: 2px solid red;
-}
-
-input:valid {
-  border: 2px solid green;
+input.required:invalid {
+  color: red;
 }
 
 .hidden-form {

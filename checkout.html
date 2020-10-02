@@ -157,8 +157,60 @@
               
             </div>
 
-            <button type="submit" class="btn btn-primary mt-4">Submit</button>
+            <h3 class="font-weight-bold text-center display-4 mt-4">Payment</h2>
+            
+            <!-- payment type choice -->
+            <fieldset class="form-group">
+              <div class="row">
+                <div class="col-sm-10">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="debit-card" value="option1" checked>
+                    <label class="form-check-label" for="debit-card">
+                      Debit card
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="credit-card" value="option2">
+                    <label class="form-check-label" for="credit-card">
+                      Credit card
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
 
+          <!-- Card name and number-->
+            <div class="row">
+              <div class="col">
+                <div class="form-group">
+                  <label for="formGroupExampleInput">Name On Card</label>
+                  <input type="text" class="form-control" id="card-name" placeholder="Name On Card" required>
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-group">
+                  <label for="formGroupExampleInput2">Card Number</label>
+                  <input type="text" class="form-control" id="card-number" placeholder="Card Number" required>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-3">
+                <div class="form-group">
+                  <label for="formGroupExampleInput2">Expiration</label>
+                  <input type="text" class="form-control" id="expiration" placeholder="Expiration" required>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="form-group">
+                  <label for="formGroupExampleInput2">CVV</label>
+                  <input type="text" class="form-control" id="cvv" placeholder="CVV" required>
+                </div>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary mt-4">Submit</button>
           </form>
         </div>
         
