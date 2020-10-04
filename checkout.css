@@ -2,10 +2,6 @@ body {
   background-color: #a6a6ad;
 }
 
-.badge-spacing {
-  margin-left: 6rem;
-}
-
 input.required:invalid {
   color: red;
 }

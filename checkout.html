@@ -17,7 +17,7 @@
     <div class="container">
       <!-- Title -->
       <div class="col">
-        <h1 class="display-4 font-weight-bold text-center mt-4">
+        <h1 class="display-3 font-weight-bold text-center mt-4">
           Edgar Pineda's Checkout Form
         </h1>
       </div>
@@ -28,7 +28,7 @@
           
           <h3 class="font-weight-bold text-center display-4">Billing Address</h2>
           
-          <form>
+          <form class="mt-3">
             <!-- first and last name input fields-->
             <div class="row">
               <div class="col">
@@ -102,7 +102,7 @@
             </div>
 
             <!-- For shipping -->
-            <div id="shippingForm" style="display: none;">
+            <div id="shippingForm" class="hidden-form">
               <h3 class="font-weight-bold text-center display-4 mt-5">Shipping Address</h2>
 
               <!-- first and last name input fields-->
@@ -110,13 +110,13 @@
                 <div class="col">
                   <div class="form-group">
                     <label for="formGroupExampleInput">First Name</label>
-                    <input type="text" class="form-control" id="first-name" placeholder="First Name" >
+                    <input type="text" class="form-control" id="shipping-first-name" placeholder="First Name" >
                   </div>
                 </div>
                 <div class="col">
                   <div class="form-group">
                     <label for="formGroupExampleInput2">Last Name</label>
-                    <input type="text" class="form-control" id="last-name" placeholder="Last Name" >
+                    <input type="text" class="form-control" id="shipping-last-name" placeholder="Last Name" >
                   </div>
                 </div>
               </div>
@@ -124,7 +124,7 @@
               <!-- Address field -->
             <div class="form-group">
               <label for="inputAddress">Address</label>
-              <input type="text" class="form-control" id="address" placeholder="Address" >
+              <input type="text" class="form-control" id="shipping-address" placeholder="Address" >
             </div>
 
             <!-- Address 2 field -->
@@ -137,13 +137,13 @@
               <!-- City Field -->
               <div class="form-group col-md-4">
                 <label for="inputCity">City</label>
-                <input type="text" class="form-control" id="city" >
+                <input type="text" class="form-control" id="shipping-city" >
               </div>
 
               <!-- State Field -->
               <div class="form-group col-md-4">
                 <label for="inputState">State</label>
-                <select id="state" class="form-control">
+                <select id="shipping-state" class="form-control">
                   <option>New York</option>
                 </select>
               </div>
@@ -151,7 +151,7 @@
               <!-- Zip Code Field-->
               <div class="form-group col-md-4">
                 <label for="inputZip">Zip Code</label>
-                <input type="text" class="form-control" id="zip">
+                <input type="text" class="form-control" id="shipping-zip">
               </div>
             </div>
               
@@ -215,15 +215,32 @@
         </div>
         
         <!-- cart code -->
-        <div class="col-md-2 align-self-center offset-md-2 cart">
+        <div class="col-md-4 offset-md-2 mt-2">
           <div class="text-center">
-            <h3 class="font-weight-bold">
-              My Cart
-              <span class="badge badge-secondary bg-success badge-spacing"
-                >1</span
-              >
+            <h3 class="font-weight-bold display-5 d-flex justify-content-between">
+              My Cart <span class="badge badge-secondary bg-success">1</span>
             </h3>
           </div>
+          <!-- items -->
+          <ul class="list-group list-group-flush mt-4">
+            <li class="list-group-item d-flex justify-content-between text-primary"><h6>GeForce RTX 3080</h6> <span>$699.00</span></li>
+            <li class="list-group-item d-flex justify-content-between text-primary"><h6>GeForce RTX 3090</h6> <span>1,499.00</span></li>
+            <li class="list-group-item d-flex justify-content-between text-danger"><h6>Promo Code</h6> <span>-$5</span></li>
+            <li class="list-group-item d-flex justify-content-between text-info"><h5>Total</h5><span>$2,193.00</span></li>
+          </ul>
+
+          <!-- Promo code form -->
+          <form>
+            <div class="row">
+              <div class="col mt-4">
+                <div class="form-group">
+                  <label for="formGroupExampleInput">Promo Code</label>
+                  <input type="text" class="form-control" id="promo-code" placeholder="Promo Code" required>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary mt-5">Promo Code</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
