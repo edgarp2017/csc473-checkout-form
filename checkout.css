@@ -9,3 +9,11 @@ input.required:invalid {
 .hidden-form {
   display: none;
 }
+
+.item-bg {
+  background-color: #cacace;
+}
+
+.input-bg {
+  background-color: #e4e4e7;
+}

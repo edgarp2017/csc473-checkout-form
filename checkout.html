@@ -223,24 +223,25 @@
           </div>
           <!-- items -->
           <ul class="list-group list-group-flush mt-4">
-            <li class="list-group-item d-flex justify-content-between text-primary"><h6>GeForce RTX 3080</h6> <span>$699.00</span></li>
-            <li class="list-group-item d-flex justify-content-between text-primary"><h6>GeForce RTX 3090</h6> <span>1,499.00</span></li>
-            <li class="list-group-item d-flex justify-content-between text-danger"><h6>Promo Code</h6> <span>-$5</span></li>
-            <li class="list-group-item d-flex justify-content-between text-info"><h5>Total</h5><span>$2,193.00</span></li>
-          </ul>
-
-          <!-- Promo code form -->
-          <form>
-            <div class="row">
-              <div class="col mt-4">
-                <div class="form-group">
-                  <label for="formGroupExampleInput">Promo Code</label>
-                  <input type="text" class="form-control" id="promo-code" placeholder="Promo Code" required>
+            <li class="list-group-item d-flex justify-content-between text-primary item-bg"><h6>GeForce RTX 3080</h6> <span>$699.00</span></li>
+            <li class="list-group-item d-flex justify-content-between text-primary item-bg"><h6>GeForce RTX 3090</h6> <span>1,499.00</span></li>
+            <li class="list-group-item d-flex justify-content-between text-danger item-bg"><h6>Promo Code</h6> <span>-$5</span></li>
+            <li class="list-group-item d-flex justify-content-between text-info item-bg"><h5>Total</h5><span>$2,193.00</span></li>
+            <li class="list-group-item d-flex justify-content-between item-bg"> <!-- Promo code form -->
+              <form>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control input-bg" id="promo-code" placeholder="Promo Code" required>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <button type="submit" class="btn btn-primary">Promo Code</button>
+                  </div>
                 </div>
-              </div>
-              <button type="submit" class="btn btn-primary mt-5">Promo Code</button>
-            </div>
-          </form>
+              </form>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
